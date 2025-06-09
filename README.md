@@ -1,5 +1,27 @@
 # GCP MCP Server
 
+<div align="center">
+
+# Gcp Mcp Server
+
+[![GitHub stars](https://img.shields.io/github/stars/LokiMCPUniverse/gcp-mcp-server?style=social)](https://github.com/LokiMCPUniverse/gcp-mcp-server/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/LokiMCPUniverse/gcp-mcp-server?style=social)](https://github.com/LokiMCPUniverse/gcp-mcp-server/network)
+[![GitHub watchers](https://img.shields.io/github/watchers/LokiMCPUniverse/gcp-mcp-server?style=social)](https://github.com/LokiMCPUniverse/gcp-mcp-server/watchers)
+
+[![License](https://img.shields.io/github/license/LokiMCPUniverse/gcp-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/gcp-mcp-server/blob/main/LICENSE)
+[![Issues](https://img.shields.io/github/issues/LokiMCPUniverse/gcp-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/gcp-mcp-server/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/LokiMCPUniverse/gcp-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/gcp-mcp-server/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/LokiMCPUniverse/gcp-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/gcp-mcp-server/commits)
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![MCP](https://img.shields.io/badge/Model_Context_Protocol-DC143C?style=for-the-badge)](https://modelcontextprotocol.io)
+
+[![Commit Activity](https://img.shields.io/github/commit-activity/m/LokiMCPUniverse/gcp-mcp-server?style=flat-square)](https://github.com/LokiMCPUniverse/gcp-mcp-server/pulse)
+[![Code Size](https://img.shields.io/github/languages/code-size/LokiMCPUniverse/gcp-mcp-server?style=flat-square)](https://github.com/LokiMCPUniverse/gcp-mcp-server)
+[![Contributors](https://img.shields.io/github/contributors/LokiMCPUniverse/gcp-mcp-server?style=flat-square)](https://github.com/LokiMCPUniverse/gcp-mcp-server/graphs/contributors)
+
+</div>
+
 A comprehensive Model Context Protocol (MCP) server for integrating Google Cloud Platform (GCP) APIs with GenAI applications.
 
 ## Features
